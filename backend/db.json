@@ -29,6 +29,11 @@
       "name": "teste",
       "price": 125.98,
       "id": 6
+    },
+    {
+      "name": "veio do forms",
+      "price": "11.11",
+      "id": 7
     }
   ]
 }
