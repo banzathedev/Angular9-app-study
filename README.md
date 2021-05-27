@@ -3,7 +3,7 @@ I like programming a lot and I'm a Developer Front-End jr, currently studying re
 
 Contacts:
 
-WhatsApp: (11) 9 8865-5770
+WhatsApp: +55 (11) 9 8865-5770
 
 Instagram: @ GRPartist_98 Email:
 
