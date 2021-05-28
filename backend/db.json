@@ -18,12 +18,27 @@
     {
       "id": 4,
       "name": "Caneta azul ",
-      "price": 5.60
+      "price": 5.6
     },
     {
       "name": "Caneta vermelha",
       "price": "5.60",
       "id": 5
+    },
+    {
+      "name": "Caneta Preta",
+      "price": "5.60",
+      "id": 6
+    },
+    {
+      "name": "Lápis Grafite ",
+      "price": "1.50",
+      "id": 7
+    },
+    {
+      "name": "Lápis BIC Grafite ",
+      "price": "1.99",
+      "id": 8
     }
   ]
 }

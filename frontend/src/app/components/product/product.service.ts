@@ -1,5 +1,8 @@
+import { Product } from './product.model';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 
 @Injectable({
@@ -7,7 +10,10 @@ import { Injectable } from '@angular/core';
 })
 export class ProductService {
 
-  constructor(private snackBar: MatSnackBar) { }
+  baseUrl = "http://localhost:3001/products"
+
+  constructor(private snackBar: MatSnackBar, 
+    private http: HttpClient) { }
 
   showMessage(msg: string): void {
     this.snackBar.open(msg, 'x', {
@@ -16,4 +22,28 @@ export class ProductService {
       verticalPosition: "top"
     })
   }
+
+  create(product: Product): Observable<Product> {
+    return this.http.post<Product>(this.baseUrl, product);
+  }
+  
+  read(): Observable<Product []> {
+    return this.http.get<Product []>(this.baseUrl);
+  }
+
+  readById(id: number): Observable<Product> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<Product>(url);
+  }
+
+  update(product: Product): Observable<Product> {
+    const url = `${this.baseUrl}/${product.id}`;
+    return this.http.put<Product>(url, product)
+  };
+  delete(id: number): Observable<Product> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.delete<Product>(url);
+  }
+
 }
+ //CRUD MA BOIS !!! CREATE READ UPDATE DELETE !!!!
