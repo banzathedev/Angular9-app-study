@@ -26,13 +26,13 @@
       "id": 5
     },
     {
-      "name": "teste",
-      "price": 125.98,
+      "name": "Caneta Preta",
+      "price": "5.60",
       "id": 6
     },
     {
-      "name": "veio do forms",
-      "price": "11.11",
+      "name": "Lápis Grafite ",
+      "price": "1.50",
       "id": 7
     },
     {
